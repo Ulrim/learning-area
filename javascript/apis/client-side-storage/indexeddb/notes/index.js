@@ -3,7 +3,7 @@ const list = document.querySelector('ul');
 const titleInput = document.querySelector('#title');
 const bodyInput = document.querySelector('#body');
 const form = document.querySelector('form');
-const submitBtn = document.querySelector('form button');
+const submitBtn = document.querySelector('form button'); // meaningless constants (의미없는 값..)
 
 // Create an instance of a db object for us to store the open database in
 let db;
@@ -47,7 +47,7 @@ window.onload = function() {
   };
 
   // Create an onsubmit handler so that when the form is submitted the addData() function is run
-  form.onsubmit = addData;
+  form.onsubmit = addData; // = submitBtn.addEventListenet('click', addData); 'submitBtn'을 활용하려면 이렇게 추가..
 
   // Define the addData() function
   function addData(e) {
